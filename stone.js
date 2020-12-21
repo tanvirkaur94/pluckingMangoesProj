@@ -1,5 +1,5 @@
 class Stone{
-    constructor(x, y,r) {
+    constructor(x, y, r) {
         var options = {
             isStatic:false,
             restitution:0,
