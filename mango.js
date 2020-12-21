@@ -1,5 +1,5 @@
 class Mango{
-    constructor(x, y,r) {
+    constructor(x, y, r) {
         var options = {
             isStatic:true,
             restitution:0,
