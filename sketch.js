@@ -32,37 +32,38 @@ function setup() {
 	boy = createSprite(200,500);
 	boy.addImage(boyImage);
 	boy.scale = 0.15;
-
+	
 	//Create the Bodies Here.
 	ground = new Ground(width/2,height-10,width,10);
-	stone = new Stone(120,415);
+	stone = new Stone(120,415,30);
 
 	sling = new Slingshot(stone.body,{x:120,y:415})
 	
-	mango1=new Mango(1100,100);
-   mango2=new Mango(1170,130);
-	mango3=new Mango(1010,140);
-	mango4=new Mango(1000,70);
-	mango5=new Mango(1100,70);
-	mango6=new Mango(1000,230);
-	mango7=new Mango(900,230);
-	mango8=new Mango(1140,150);
-	mango9=new Mango(1100,230);
-	mango10=new Mango(1200,200);
-	mango11=new Mango(1120,50);
-	mango12=new Mango(900,160);
+	mango1=new Mango(1100,100,15);
+   	mango2=new Mango(1170,130,15);
+	mango3=new Mango(1010,140,15);
+	mango4=new Mango(1000,70,15);
+	mango5=new Mango(1100,70,15);
+	mango6=new Mango(1000,230,15);
+	mango7=new Mango(900,230,15);
+	mango8=new Mango(1140,150,20);
+	mango9=new Mango(1100,230,20);
+	mango10=new Mango(1200,200,20);
+	mango11=new Mango(1120,50,20);
+	mango12=new Mango(900,160,20);
   
 }
 
 
 function draw() {
-  background(255);
-  Engine.update(engine);
-  drawSprites();
-
-  sling.display();
-  stone.display();
-  ground.display();
+  	background(255);
+  	Engine.update(engine);
+  	drawSprites();
+ 	text("Press space for another chance", 200,100);
+	
+	 sling.display();
+	 stone.display();
+	 ground.display();
 
   	mango1.display();
 	mango2.display();
